@@ -6,7 +6,7 @@ export interface AuthRequest extends Request {
     user?: any; // Сюди ми покладемо { id: 1, role: 'admin' }
 }
 
-const auth = (req: AuthRequest, res: Response, next: NextFunction) => {
+export const auth = (req: AuthRequest, res: Response, next: NextFunction) => {
     const token = req.cookies.accessToken;
     if (!token) {
         throw new AppError('Де дані курво', 401)

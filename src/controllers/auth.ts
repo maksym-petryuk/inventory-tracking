@@ -5,24 +5,29 @@ import {AppError} from "../utils/error.js";
 import {sendResponse} from "../utils/sendResponse.js";
 import type {AuthRequest} from "../middleware/auth.js";
 import bcrypt from "bcryptjs";
+import type {CreateUserDTO, IUser, PublicUser} from "../interface/user.js";
+import {newId} from "../utils/generateId.js";
 
-export class app {
+export class auth {
 
     register = catchAsync( async (req: Request, res: Response )=> {
-        const {name, password, role} = req.body;
+
+        const {userName, password, roles} = req.body as CreateUserDTO ;
 
         const hashed = await bcrypt.hash(password , 10);
 
-        const newUser = {id:2, name, passwor:hashed, role};
+        const id = newId()
 
-        const {passwor, ...data} = newUser;
+        const newUser : IUser = {id, userName, password:hashed, roles};
+
+        const {password:_,...userSend} = newUser ;
 
         sendResponse(
             res,
             {
                 status:201,
                 message:'Створено нового користувача успішно',
-                data
+                data:userSend ,
             }
         )
 

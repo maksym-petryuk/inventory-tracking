@@ -1,5 +1,6 @@
 import {Router} from "express";
 import {ProductController} from "../controllers/product.js";
+import {auth} from "../middleware/auth.js";
 
 const productController = new ProductController();
 
