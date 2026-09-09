@@ -7,7 +7,6 @@ export interface Idone {
                         rest? : {
                             name: string
                             stack?: string | undefined
-                            cause?: unknown
                         }
                     };
                     data : {
