@@ -1,7 +1,6 @@
 import {Col, Row} from "antd";
 import { Input } from 'antd';
 import type {SearchProps} from "antd/es/input";
-import {Header} from "antd/es/layout/layout";
 
 export default function Sales () {
     const { Search } = Input;

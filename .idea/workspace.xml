@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41d7aecd-eddb-42ab-9f80-3da3cbb2b045" name="Changes" comment="logger">
+      <change afterPath="$PROJECT_DIR$/backend/src/interface/entities/cartItem.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/interface/errorAndResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/middleware/logged.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/middleware/responseError.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/utils/logger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-admin-client/src/component/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-admin-client/src/component/welfk.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-admin-client/src/peges/Sales.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-admin-client/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/forbiden.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/forbiden.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/invalid-credentials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/invalid-credentials.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/not-found.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/not-found.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/unauthorized.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/unauthorized.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/errors/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/common/errors/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/controllers/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/Iresponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/Iresponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/createProductDTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/createProductDTO.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/errorAndResponse.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/errorCode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/errorCode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/stock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/stock.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/transfer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/transfer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/transferItem.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/transferItem.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/interface/entities/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middleware/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/error.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/logged.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/time.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/middleware/time.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/repositories/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/routes/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/training/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/training/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/express.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/types/express.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/catchAsync.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/utils/catchAsync.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/error.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/generateId.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/utils/generateId.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sendResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/utils/sendResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;maksym-petryuk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/maksym-petryuk/inventory-tracking.git&quot;,
+    &quot;accountId&quot;: &quot;c858ebd7-3f00-4498-96d8-c11cd0a4ba19&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3G8VMcK4l1xIizkhqBrGLlcCQg1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.server.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.server.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/oblik-tovara/src/services&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\oblik-tovara\\backend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\oblik-tovara\src\services" />
+      <recent name="C:\oblik-tovara\src\routes" />
+      <recent name="C:\oblik-tovara\src\repositories" />
+      <recent name="C:\oblik-tovara\src\entities" />
+      <recent name="C:\oblik-tovara\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\oblik-tovara\my-admin-client\src" />
+      <recent name="C:\oblik-tovara\backend" />
+      <recent name="C:\oblik-tovara" />
+      <recent name="C:\oblik-tovara\src\interface\entities" />
+      <recent name="C:\oblik-tovara\src\controllers" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.29188.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41d7aecd-eddb-42ab-9f80-3da3cbb2b045" name="Changes" comment="" />
+      <created>1783353136125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783353136125</updated>
+      <workItem from="1783353137250" duration="1533000" />
+      <workItem from="1784127105110" duration="819000" />
+      <workItem from="1785605120998" duration="1803000" />
+      <workItem from="1788076037862" duration="60250000" />
+      <workItem from="1788772466850" duration="27617000" />
+      <workItem from="1788924657505" duration="37768000" />
+      <workItem from="1789443444950" duration="596000" />
+      <workItem from="1789477924869" duration="1884000" />
+      <workItem from="1789650626705" duration="5397000" />
+      <workItem from="1789725888958" duration="2278000" />
+      <workItem from="1789928812351" duration="40000" />
+      <workItem from="1789928892131" duration="3920000" />
+      <workItem from="1790009750911" duration="7715000" />
+    </task>
+    <task id="LOCAL-00001" summary="interface">
+      <option name="closed" value="true" />
+      <created>1788885587682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788885587683</updated>
+    </task>
+    <task id="LOCAL-00002" summary="start">
+      <option name="closed" value="true" />
+      <created>1788885636234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788885636234</updated>
+    </task>
+    <task id="LOCAL-00003" summary="auth">
+      <option name="closed" value="true" />
+      <created>1788925551800</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788925551800</updated>
+    </task>
+    <task id="LOCAL-00004" summary="auth">
+      <option name="closed" value="true" />
+      <created>1788925570369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788925570369</updated>
+    </task>
+    <task id="LOCAL-00005" summary="express.d.ts">
+      <option name="closed" value="true" />
+      <created>1788959465921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788959465921</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" implemented all error">
+      <option name="closed" value="true" />
+      <created>1788980233657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1788980233657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/server.js.map" />
+        <option value="$PROJECT_DIR$/src/server.d.ts" />
+        <option value="$PROJECT_DIR$/src/server.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/server.js" />
+        <option value="$PROJECT_DIR$/src/routes/product.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/routes/product.js" />
+        <option value="$PROJECT_DIR$/src/routes/product.d.ts" />
+        <option value="$PROJECT_DIR$/src/routes/product.js.map" />
+        <option value="$PROJECT_DIR$/src/services/product.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/services/product.js" />
+        <option value="$PROJECT_DIR$/src/services/product.d.ts" />
+        <option value="$PROJECT_DIR$/src/services/product.js.map" />
+        <option value="$PROJECT_DIR$/src/repositories/product.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/repositories/product.js" />
+        <option value="$PROJECT_DIR$/src/repositories/product.d.ts" />
+        <option value="$PROJECT_DIR$/src/repositories/product.js.map" />
+        <option value="$PROJECT_DIR$/src/training/index.js" />
+        <option value="$PROJECT_DIR$/src/training/index.d.ts" />
+        <option value="$PROJECT_DIR$/src/training/index.js.map" />
+        <option value="$PROJECT_DIR$/src/training/index.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/controllers/product.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/controllers/product.js" />
+        <option value="$PROJECT_DIR$/src/controllers/product.d.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/product.js.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.js" />
+        <option value="$PROJECT_DIR$/src/middleware/time.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.d.ts" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.js" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.js.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.js.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.d.ts" />
+        <option value="$PROJECT_DIR$/src/controllers/product.js" />
+        <option value="$PROJECT_DIR$/src/controllers/product.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/controllers/product.d.ts" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.d.ts" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.js" />
+        <option value="$PROJECT_DIR$/src/middleware/logged.js.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.js.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.js" />
+        <option value="$PROJECT_DIR$/src/middleware/time.d.ts.map" />
+        <option value="$PROJECT_DIR$/src/middleware/time.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="interface" />
+    <MESSAGE value="start" />
+    <MESSAGE value="auth" />
+    <MESSAGE value="express.d.ts" />
+    <MESSAGE value=" implemented all error" />
+    <MESSAGE value="logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="logger" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/my-admin-client/src/App.tsx</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
