@@ -2,18 +2,18 @@ import {ProductService} from "../services/product.js";
 import type {Request, Response} from "express";
 import {catchAsync, } from "../utils/catchAsync.js";
 import {sendResponse} from "../utils/sendResponse.js";
-import type {AuthRequest} from "../middleware/auth.js";
-import {AppError} from "../utils/error.js";
+import {ForbidenError} from "../common/errors/forbiden.js";
+import {NotFound} from "../common/errors/not-found.js";
 
 
 export class ProductController{
        private productService = new ProductService();
 
        getProduct = catchAsync(async (req: Request, res: Response) => {
+           req.log!.info(`Fetching product with barcode: ${req.params.barcode}`);
            const product = await this.productService.getProductByBarcode(req.params.barcode as string);
            if (!product) {
-               res.status(404)
-               throw new Error("Product not found");
+               throw new NotFound("Product not found");
            }
            sendResponse(res,{
                status:200,
@@ -31,17 +31,17 @@ export class ProductController{
             })
        })
 
-       createProduct  = catchAsync(async (req: AuthRequest, res: Response) => {
-
-           const role = req.user.role;
+       createProduct  = catchAsync(async (req: Request, res: Response) => {
+           req.log!.info('Creating new product')
+           const role = req.user!.roles;
 
            if (role != "admin") {
-               throw new AppError("У вас немає прав для створення товару", 403);
+               throw new ForbidenError("У вас немає прав для створення товару");
            }
 
            const product = await this.productService.createProduct(req.body);
             if (!product) {
-                throw new AppError("Product not found", 404);
+                throw new NotFound("Product not found");
             }
            sendResponse(res, {
                status:201,
@@ -70,6 +70,7 @@ export class ProductController{
        // })
 
        updateProduct  = catchAsync(async (req: Request, res: Response) => {
+           req.log!.info(`Updating product: ${req.params.barcode}`);
            const prod  = await this.productService.updateProduct(req.params.barcode as string, req.body);
            if (prod !== null) {
                sendResponse(res, {
@@ -78,16 +79,16 @@ export class ProductController{
                    message: "Product updated successfully"
                })
            }else {
-               res.status(404)
-               throw new Error("Product not found");
+               throw new NotFound("Product not found");
            }
 
        })
        deleteProduct  =catchAsync( async (req: Request, res: Response) => {
+           req.log!.info(`Deleting product: ${req.params.barcode}`);
            const resalt = await this.productService.deleteProduct(req.params.barcode as string);
             if (resalt === null) {
-                res.status(404)
-                throw new Error("Product not found, when trying to delete");
+
+                throw new NotFound("Product not found, when trying to delete");
             }else {
                 sendResponse(res, {
                     status: 200,

@@ -1,12 +1,12 @@
 import jwt from 'jsonwebtoken'
 import {catchAsync} from "../utils/catchAsync.js";
 import type {Response, Request} from "express";
-import {AppError} from "../utils/error.js";
+
 import {sendResponse} from "../utils/sendResponse.js";
-import type {AuthRequest} from "../middleware/auth.js";
 import bcrypt from "bcryptjs";
-import type {CreateUserDTO, IUser, PublicUser} from "../interface/user.js";
+import type {CreateUserDTO, IUser, PublicUser} from "../interface/entities/user.js";
 import {newId} from "../utils/generateId.js";
+import {UnauthorizedError} from "../common/errors/unauthorized.js";
 
 export class auth {
 
@@ -37,7 +37,7 @@ export class auth {
         const {userName, password} = req.body
 
         if (userName !== 'admin' || password !== '12345') {
-            throw new AppError ("Невірний логін або пароль", 401);
+            throw new UnauthorizedError ("Невірний логін або пароль");
         }
 
         const token = jwt.sign({id:1, role: 'admin'},"my_super_secret_key", {expiresIn: "15m"});

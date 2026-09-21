@@ -1,4 +1,4 @@
-import type {IProduct} from "../interface/product.js";
+import type {IProduct} from "../interface/entities/product.js";
 
 let products: IProduct[]  = [
     {

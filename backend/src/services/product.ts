@@ -1,6 +1,6 @@
 import {ProductRepository} from "../repositories/product.js";
-import type {IProduct} from "../interface/product.js";
-import type {ICreateProductDTO} from "../interface/createProductDTO.js";
+import type {IProduct} from "../interface/entities/product.js";
+import type {ICreateProductDTO} from "../interface/entities/createProductDTO.js";
 import {newId} from "../utils/generateId.js";
 import {AppError} from "../utils/error.js";
 

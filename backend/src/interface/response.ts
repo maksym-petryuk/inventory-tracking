@@ -20,3 +20,19 @@ export interface ErrorResponse {
     message: string;
     detail?: Array<{fillde : string, message : string }>
 }
+//
+// export type SuccessResponse<T> = T;
+
+
+export interface SuccessResponse {
+    status: number;
+    message?: string;
+    data: any;
+}
+
+export interface ApiResponse<T> {
+    data?: SuccessResponse;
+    error?: ErrorResponse;
+    timetable: number
+}
+
