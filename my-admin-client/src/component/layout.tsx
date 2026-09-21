@@ -1,30 +1,22 @@
 import React from 'react';
 import {
     BarChartOutlined, DatabaseOutlined,
-    DesktopOutlined,
-    FileOutlined, FileSearchOutlined,
+        FileSearchOutlined,
     FundViewOutlined,
-    MenuFoldOutlined,
-    MenuUnfoldOutlined,
-    PieChartOutlined,
     ShoppingCartOutlined,
-    TeamOutlined,
+
 } from '@ant-design/icons';
 import type {MenuProps} from 'antd';
 import {Layout, Menu, theme} from 'antd';
-import {Outlet, useNavigate, useNavigation} from "react-router-dom";
+import {Outlet, useNavigate} from "react-router-dom";
 
-const {Header, Content, Footer, Sider} = Layout;
+const {Content, Sider} = Layout;
 
 const layoutStyle: React.CSSProperties = {
 
     minHeight: '100vh',
     minWidth: '100%',
 };
-
-
-//
-
 
 const items: MenuProps['items'] = [
     { key: '/stats', icon: <BarChartOutlined/>, label: "Статистика дня" },
@@ -36,9 +28,6 @@ const items: MenuProps['items'] = [
         ] },
     { key: '/reports', icon: <FundViewOutlined/>, label: "Звітність" },
 ];
-
-
-
 
 const Laut: React.FC = () => {
     const [collapsed, setCollapsed] = React.useState(false);
@@ -73,5 +62,6 @@ const Laut: React.FC = () => {
         </Layout>
     );
 };
+
 
 export default Laut;
